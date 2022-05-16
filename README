@@ -1,2 +1,15 @@
-Voici le Readme pour le projet
-46.26 € HT
+  Projet : Ambisonique
+  
+Collaborateurs : RONDEAU Alexis, SOULE Zeïck, BODET Amaury, VAN DE MOOSDIJK Martina, MILLASSEAU Adrien, LATHUILLERE Colin
+
+Ce projet, initialement conçu par des troisièmes années, permet de connecter huit enceintes pour délivrer un son provenant de différentes directions.
+Notre objectif est de remplacer les deux cables responsables de la puissance et du signal par un cable unique. 
+
+Objectifs : 
+- Créer un module transformant le courant d'entrée du réseau 230V AC en 12V DC
+- Créer un module qui additionne la partie continue de 12V au signal
+- Un module qui sépare le signal et la puissance pour alimenter les enceintes
+
+
+
+Budget actuel : 46.26 € HT
