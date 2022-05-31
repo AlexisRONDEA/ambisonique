@@ -39,14 +39,15 @@ Pour ce module, on utilise les composants suivants :
 
 On réalise un montage à collecteur commun en utilisant le TIP31A. Il permet d'obtenir en sortie, au niveau de l'émetteur et dans le même fil, le signal audio ainsi que les 24 V DC obtenus dans le module précédent. On assure la transmission par un seul cable XLR. On souhaite également avoir un courant de 1.5 A en sortie
 du transistor, d'ou le choix d'un transistor de puissance pour réaliser ce montage. Enfin, on réalise ce montage deux fois, avec un signal audio positif puis négatif afin de pouvoir les soustraire et travailler en différentiel. L'objectif du différentiel est d'éviter les perturbations électromagnétiques, qui se répercuternt sur les deux 
-signaux. En les soustrayant, on efface alors les parasites. 
+signaux. En les soustrayant, on efface alors les parasites. On souhaite également éviter d'impacter la valeur continue, en choisissant judicieusement la valeur des résistances. 
 
-Nous avons pensé à réaliser ce module en utilisant un schéma additionneur avec un amplificateur opérationnel, néanmoins cela aurait été compliqué car il nous fallait sortir un courant conséquent en sortie, ce qui n'est pas possible avec un AOP.
+Nous avons pensé à réaliser ce module en utilisant un schéma additionneur avec un amplificateur opérationnel, néanmoins cela aurait été compliqué car il nous fallait sortir un courant conséquent en sortie, ce qui n'est pas possible avec un AOP. 
 
-Ce module fait partie du PCB, les fichiers utiles au PCB sont donc "ambisoniqueAlim.sch" et "ambisoniqueAlim.brd". 
+Ce module fait partie du PCB, les fichiers utiles au PCB sont donc "ambisoniqueAlim.sch" et "ambisoniqueAlim.brd".
 
-        IV / Séparateur 
-
+        IV / Séparateur
+	
+Pour ce module, 
 
 
         V / Amplificateur audio
