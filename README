@@ -50,8 +50,7 @@ Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc "ambi
 Pour ce module, on utilise des condensateurs. On utilise leur caractéristique en basse fréquence, qui permettent de laisser passer que le signal audio, et la puissance en haute fréquence.
 On souhaite séparer la composante continue afin de l'utiliser en tant qu'alimentation pour les enceintes, et d'utiliser la composante alternative pour l'amplifier dans le module suivant. 
 
-Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc "ambisonique
-
+Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc "ambisoniqueAmpli.sch" et "ambisoniqueAmpli.sch"
 
         V / Amplificateur audio
         
