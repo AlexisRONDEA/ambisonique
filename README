@@ -1,4 +1,4 @@
-  Projet : Ambisonique
+	Projet : Ambisonique
   
 Collaborateurs : RONDEAU Alexis, SOULE Zeïck, BODET Amaury, VAN DE MOOSDIJK Martina, MILLASSEAU Adrien, LATHUILLERE Colin
 
@@ -27,18 +27,28 @@ Le transformateur permet de modifier la tension d’entrée du réseau de 230V a
 Dans un premier temps, pour créer ce module on voulait utiliser un montage à transistor à charges réparties. Cependant, ce circuit était assez vieux et donc pas assez performant par rapport à d’autres montages envisageables. Les pertes étaient trop importantes et c’est pour cela que nous avons décidé d’opter pour ce circuit actuel. 
 De plus, notre circuit actuel devait utiliser les deux branches de sortie du transformateur qui fournit du 2x24V, car une fois 24V n’aurait pas était suffisant. Cependant la tension de sortie correspond à un courant alternatif, qui est donc redresser par le pont de diode ensuite à 33V continu. C’est pourquoi on n’utilise qu’une seule branche de sortie du transformateur.  
 
- Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc "ambisoniqueAlim.sch" et "ambisoniqueAlim.brd" 
+Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc "ambisoniqueAlim.sch" et "ambisoniqueAlim.brd". 
 
 
         III / Additionneur 
 	
-Pour ce module, on utilise un transistor de puissance NPN TIP31A qu'on place dans un montage à collecteur commun. Il permet d'obtenir en sortie, au niveau de l'émetteur et dans le même fil, le signal audio ainsi que les 24 V DC obtenus dans le module précédent. On souhaite également avoir un courant de 1.5 A en sortie
-du transistor, d'ou le choix d'un transistor de puissance pour réaliser ce montage. Enfin, on réalise ce montage deux fois, avec un signal audio positif puis négatif afin de pouvoir les soustraire et travailler en différentiel pour éviter les pertes.
+Pour ce module, on utilise les composants suivants : 
 
-Nous avons pensé à réaliser ce module en utilisant un schéma additionneur avec un amplificateur opérationnel, néanmoins cela aurait été compliqué car il nous fallait 
+- Deux transistors de puissance NPN TIP31A 
+- Deux connecteurs Jack 
+
+On réalise un montage à collecteur commun en utilisant le TIP31A. Il permet d'obtenir en sortie, au niveau de l'émetteur et dans le même fil, le signal audio ainsi que les 24 V DC obtenus dans le module précédent. On assure la transmission par un seul cable XLR. On souhaite également avoir un courant de 1.5 A en sortie
+du transistor, d'ou le choix d'un transistor de puissance pour réaliser ce montage. Enfin, on réalise ce montage deux fois, avec un signal audio positif puis négatif afin de pouvoir les soustraire et travailler en différentiel. L'objectif du différentiel est d'éviter les perturbations électromagnétiques, qui se répercuternt sur les deux 
+signaux. En les soustrayant, on efface alors les parasites. 
+
+Nous avons pensé à réaliser ce module en utilisant un schéma additionneur avec un amplificateur opérationnel, néanmoins cela aurait été compliqué car il nous fallait sortir un courant conséquent en sortie, ce qui n'est pas possible avec un AOP.
+
+Ce module fait partie du PCB, les fichiers utiles au PCB sont donc "ambisoniqueAlim.sch" et "ambisoniqueAlim.brd". 
 
         IV / Séparateur 
-        
+
+
+
         V / Amplificateur audio
         
         
