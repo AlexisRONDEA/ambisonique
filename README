@@ -15,6 +15,7 @@ Objectifs :
  
 	II / Alimentation du circuit
         
+
 Pour ce module on utilise les composants suivants :
 -	Un connecteur MPT 0.5/2-2.54
 -	Un transformateur PCB, 230V, 2 * 24V
@@ -22,7 +23,12 @@ Pour ce module on utilise les composants suivants :
 -	Un contrôleur DC/DC, synchrone, Buck
 
 Le transformateur permet de modifier la tension d’entrée du réseau de 230V alternatif en 24V alternatif. Le courant est ensuite envoyé dans le pont de diode redresseur qui renvoie une tension de 33V continu en sortie. Enfin, le contrôleur Buck abaisse la tension à 24V continu pour l’envoyer dans le module additionneur.
-Ce module fait partie du premier PCB, 
+
+Dans un premier temps, pour créer ce module on voulait utiliser un montage à transistor à charges réparties. Cependant, ce circuit était assez vieux et donc pas assez performant par rapport à d’autres montages envisageables. Les pertes étaient trop importantes et c’est pour cela que nous avons décidé d’opter pour ce circuit actuel. 
+De plus, notre circuit actuel devait utiliser les deux branches de sortie du transformateur qui fournit du 2x24V, car une fois 24V n’aurait pas était suffisant. Cependant la tension de sortie correspond à un courant alternatif, qui est donc redresser par le pont de diode ensuite à 33V continu. C’est pourquoi on n’utilise qu’une seule branche de sortie du transformateur.  
+
+ Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc "ambisoniqueAlim.sch" et "ambisoniqueAlim.brd" 
+
 
         III / Additionneur 
 	
