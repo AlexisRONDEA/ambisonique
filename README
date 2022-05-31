@@ -25,7 +25,12 @@ Le transformateur permet de modifier la tension d’entrée du réseau de 230V a
 Ce module fait partie du premier PCB, 
 
         III / Additionneur 
-        
+	
+Pour ce module, on utilise un transistor de puissance NPN TIP31A qu'on place dans un montage à collecteur commun. Il permet d'obtenir en sortie, au niveau de l'émetteur et dans le même fil, le signal audio ainsi que les 24 V DC obtenus dans le module précédent. On souhaite également avoir un courant de 1.5 A en sortie
+du transistor, d'ou le choix d'un transistor de puissance pour réaliser ce montage. Enfin, on réalise ce montage deux fois, avec un signal audio positif puis négatif afin de pouvoir les soustraire et travailler en différentiel pour éviter les pertes.
+
+Nous avons pensé à réaliser ce module en utilisant un schéma additionneur avec un amplificateur opérationnel, néanmoins cela aurait été compliqué car 
+
         IV / Séparateur 
         
         V / Amplificateur audio
