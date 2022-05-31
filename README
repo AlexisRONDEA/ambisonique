@@ -2,14 +2,32 @@
   
 Collaborateurs : RONDEAU Alexis, SOULE Zeïck, BODET Amaury, VAN DE MOOSDIJK Martina, MILLASSEAU Adrien, LATHUILLERE Colin
 
+	I / Introduction
 Ce projet, initialement conçu par des troisièmes années, permet de connecter huit enceintes pour délivrer un son provenant de différentes directions.
-Notre objectif est de remplacer les deux cables responsables de la puissance et du signal par un cable unique. 
+Nos objectifs concernent l’encombrement et la qualité sonore de l’amplificateur audio. En effet, les enceintes sont pour l’instant alimentées par des alimentations de laboratoire, ce qui est peu pratique et prend de la place. De plus, le signal audio est transmis par un seul fil. Cette liaison asymétrique est la source de parasite sur le signal et donne lieu à une mauvaise qualité sonore. 
+On se propose donc de remplacer la transmission du signal par une liaison symétrique différentielle, pour supprimer le plus de parasites possible. On change l’amplificateur actuel par un amplificateur de classe D pour améliorer la qualité sonore du signal en sortie. Enfin, on fait passer l’alimentation des enceintes par le câble transmettant le signal audio, pour alimenter les enceintes avec le réseau.
 
 Objectifs : 
-- Créer un module transformant le courant d'entrée du réseau 230V AC en 12V DC
-- Créer un module qui additionne la partie continue de 12V au signal
-- Un module qui sépare le signal et la puissance pour alimenter les enceintes
+- Créer un module modifiant le courant d'entrée du réseau 230V AC en 24V DC
+- Créer un module qui additionne la partie continue de 24V au signal
+- Créer un module qui sépare le signal et la puissance pour alimenter les enceintes
+- Créer l’amplificateur de classe D
+ 
+	II / Alimentation du circuit
+        
+Pour ce module on utilise les composants suivants :
+-	Un connecteur MPT 0.5/2-2.54
+-	Un transformateur PCB, 230V, 2 * 24V
+-	Un pont redresseur monophasé
+-	Un contrôleur DC/DC, synchrone, Buck
 
+Le transformateur permet de modifier la tension d’entrée du réseau de 230V alternatif en 24V alternatif. Le courant est ensuite envoyé dans le pont de diode redresseur qui renvoie une tension de 33V continu en sortie. Enfin, le contrôleur Buck abaisse la tension à 24V continu pour l’envoyer dans le module additionneur.
+Ce module fait partie du premier PCB, 
 
-
-Budget actuel : 46.26 € HT
+        III / Additionneur 
+        
+        IV / Séparateur 
+        
+        V / Amplificateur audio
+        
+        
