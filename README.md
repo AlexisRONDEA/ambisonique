@@ -71,3 +71,8 @@ Nous voulions d’abord utiliser d’autres circuits, avec d’autres types d’
 De plus, la programmation du microprocesseur n’est pas terminée.
 
 Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc [ambisoniqueAmpli.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/SchematicAmpli.png) et [ambisoniqueAmpli.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/BoardAmpli.png). Les empreintes des MOSFET viennent d’internet, et celle du microprocesseur nous a été fournie en amont.
+
+###	VI / Conclusion
+
+Pour finir, voici les problèmes généraux que l'on a rencontrés ainsi que le résultat des tests effectués. Tout d'abord, nous n'avons pas testé les contrôleurs Buck séparément du reste du circuit. En effet, nous n'avons pas fait de PCB unitaire avant de passer au PCB complet. De plus, nous n'avons pas placé de points de test pour vérifier le bon fonctionnement de notre circuit. Finalement, nous aurions dû vérifier l'isolation nécessaire entre les pistes parcourue par le courant issu du réseau, pour être certain d'éviter le phénomène d'arc électrique. 
+Lors des tests des PCB, on a remarqué que les Bucks ne fonctionnaient pas, sûrement à cause d'une mauvaise soudure. Quant à l'autre PCB, il y a échauffement des composants et la tension de sortie est de 15V au lieu de 24V comme attendu. Il faudrait aussi tester le code du microprocesseur et voir s'il s'allume correctement avec le circuit.
