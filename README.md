@@ -30,7 +30,7 @@ Le transformateur permet de modifier la tension d’entrée du réseau de 230V a
 Dans un premier temps, pour créer ce module on voulait utiliser un montage avec un régulateur de tension. Cependant, ce circuit était assez vieux et donc pas assez performant par rapport à d’autres montages envisageables. Les pertes étaient trop importantes et c’est pour cela que nous avons décidé d’opter pour ce circuit actuel. 
 De plus, notre circuit actuel devait utiliser les deux branches de sortie du transformateur qui fournit du 2x24V, car une fois 24V n’aurait pas était suffisant. Cependant la tension de sortie correspond à un courant alternatif, qui est donc redresser par le pont de diode ensuite à 33V continu. C’est pourquoi on n’utilise qu’une seule branche de sortie du transformateur.  
 
- Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc ambisoniqueAlim.sch et ambisoniqueAlim.brd. Les empreintes du contrôleur Buck et du transformateur ont été créé pour Eagle tandis que l’empreinte du pont redresseur a été téléchargée sur internet. 
+ Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc [ambisoniqueAlim.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAlim.sch) et [ambisoniqueAlim.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAlim.brd). Les empreintes du contrôleur Buck et du transformateur ont été créé pour Eagle tandis que l’empreinte du pont redresseur a été téléchargée sur internet. 
 
 
 ###	III / Additionneur
@@ -44,7 +44,7 @@ On réalise un montage à collecteur commun en utilisant le TIP31A. Il permet d'
 
 Nous avons pensé à réaliser ce module en utilisant un schéma additionneur avec un amplificateur opérationnel, néanmoins cela aurait été compliqué car il nous fallait avoir un courant conséquent en sortie, ce qui n'est pas possible avec un AOP. 
 
-Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc "ambisoniqueAlim.sch" et "ambisoniqueAlim.brd".
+Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc [ambisoniqueAlim.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAlim.sch) et [ambisoniqueAlim.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAlim.brd).
 
 
  ###	IV / Séparateur 
@@ -56,7 +56,7 @@ Pour ce module, on utilise des condensateurs. On utilise leur caractéristique d
 
 Pour ce module, on a dû recommander les contrôleurs Buck. En effet, ceux commandés ne pouvait que donner du 5V en sortie contrairement aux 12V voulus.
 
-Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc "ambisoniqueAmpli.sch" et "ambisoniqueAmpli.sch".
+Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc [ambisoniqueAmpli.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAmpli.sch) et [ambisoniqueAmpli.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAmpli.brd).
 
 ###	V / Amplificateur audio
 
@@ -70,4 +70,4 @@ L’objectif de cette partie du projet est de remplacer l’amplificateur audio 
 Nous voulions d’abord utiliser d’autres circuits, avec d’autres types d’amplificateur. Cependant, cet amplificateur de classe D est le plus performant. 
 De plus, la programmation du microprocesseur n’est pas terminée.
 
-Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc "ambisoniqueAmpli.sch" et "ambisoniqueAmpli.sch". Les empreintes des MOSFET viennent d’internet, et celle du microprocesseur nous a été fournie en amont.
+Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc [ambisoniqueAmpli.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAmpli.sch) et [ambisoniqueAmpli.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAmpli.brd). Les empreintes des MOSFET viennent d’internet, et celle du microprocesseur nous a été fournie en amont.
