@@ -44,7 +44,7 @@ On réalise un montage à collecteur commun en utilisant le TIP31A. Il permet d'
 
 Nous avons pensé à réaliser ce module en utilisant un schéma additionneur avec un amplificateur opérationnel, néanmoins cela aurait été compliqué car il nous fallait avoir un courant conséquent en sortie, ce qui n'est pas possible avec un AOP. 
 
-Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc [ambisoniqueAlim.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAlim.sch) et [ambisoniqueAlim.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAlim.brd).
+Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc [ambisoniqueAlim.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/SchematicAlim.png) et [ambisoniqueAlim.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/BoardAlim.png).
 
 
  ###	IV / Séparateur 
@@ -56,7 +56,7 @@ Pour ce module, on utilise des condensateurs. On utilise leur caractéristique d
 
 Pour ce module, on a dû recommander les contrôleurs Buck. En effet, ceux commandés ne pouvait que donner du 5V en sortie contrairement aux 12V voulus.
 
-Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc [ambisoniqueAmpli.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAmpli.sch) et [ambisoniqueAmpli.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAmpli.brd).
+Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc [ambisoniqueAmpli.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/SchematicAmpli.png) et [ambisoniqueAmpli.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/BoardAmpli.png).
 
 ###	V / Amplificateur audio
 
@@ -70,4 +70,4 @@ L’objectif de cette partie du projet est de remplacer l’amplificateur audio 
 Nous voulions d’abord utiliser d’autres circuits, avec d’autres types d’amplificateur. Cependant, cet amplificateur de classe D est le plus performant. 
 De plus, la programmation du microprocesseur n’est pas terminée.
 
-Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc [ambisoniqueAmpli.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAmpli.sch) et [ambisoniqueAmpli.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAmpli.brd). Les empreintes des MOSFET viennent d’internet, et celle du microprocesseur nous a été fournie en amont.
+Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc [ambisoniqueAmpli.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/SchematicAmpli.png) et [ambisoniqueAmpli.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/BoardAmpli.png). Les empreintes des MOSFET viennent d’internet, et celle du microprocesseur nous a été fournie en amont.
