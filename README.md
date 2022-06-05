@@ -30,7 +30,7 @@ Le transformateur permet de modifier la tension d’entrée du réseau de 230V a
 Dans un premier temps, pour créer ce module on voulait utiliser un montage avec un régulateur de tension. Cependant, ce circuit était assez vieux et donc pas assez performant par rapport à d’autres montages envisageables. Les pertes étaient trop importantes et c’est pour cela que nous avons décidé d’opter pour ce circuit actuel. 
 De plus, notre circuit actuel devait utiliser les deux branches de sortie du transformateur qui fournit du 2x24V, car une fois 24V n’aurait pas était suffisant. Cependant la tension de sortie correspond à un courant alternatif, qui est donc redresser par le pont de diode ensuite à 33V continu. C’est pourquoi on n’utilise qu’une seule branche de sortie du transformateur.  
 
- Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc [ambisoniqueAlim.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAlim.sch) et [ambisoniqueAlim.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/ambisoniqueAlim.brd). Les empreintes du contrôleur Buck et du transformateur ont été créé pour Eagle tandis que l’empreinte du pont redresseur a été téléchargée sur internet. 
+ Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc [ambisoniqueAlim.sch](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/SchematicAlim.png) et [ambisoniqueAlim.brd](https://github.com/AlexisRONDEA/ambisonique/blob/main/PCB/BoardAlim.png). Les empreintes du contrôleur Buck et du transformateur ont été créé pour Eagle tandis que l’empreinte du pont redresseur a été téléchargée sur internet. 
 
 
 ###	III / Additionneur
