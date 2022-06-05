@@ -1,8 +1,8 @@
-	  Projet : Ambisonique
+#	  Projet : Ambisonique
   
 Collaborateurs : RONDEAU Alexis, SOULE Zeïck, BODET Amaury, VAN DE MOOSDIJK Martina, MILLASSEAU Adrien, LATHUILLERE Colin
 
-	I / Introduction
+###	I / Introduction
 	
 Ce projet, initialement conçu par des troisièmes années, permet de connecter huit enceintes pour délivrer un son provenant de différentes directions.
 Nos objectifs concernent l’encombrement et la qualité sonore de l’amplificateur audio. En effet, les enceintes sont pour l’instant alimentées par des alimentations de laboratoire, ce qui est peu pratique et prend de la place. De plus, le signal audio est transmis par un seul fil. Cette liaison asymétrique est la source de parasite sur le signal et donne lieu à une mauvaise qualité sonore. 
@@ -18,7 +18,7 @@ Objectifs :
 Le cahier des charges, le diagramme d’architecture, la présentation PDF du projet ainsi que les commandes des composants se trouvent dans le dossier « livrables ».
 [clicl](livrables/Cahier des Charges - Ambisonique [2].pdf)
 [clic me](https://github.com/AlexisRONDEA/ambisonique/blob/main/livrables/Cahier%20des%20Charges%20-%20Ambisonique%20%5B2%5D.pdf)
-	II / Alimentation du circuit
+###	II / Alimentation du circuit
 
 Pour ce module on utilise les composants suivants :
 -	Un connecteur MPT 0.5/2-2.54
@@ -34,7 +34,7 @@ De plus, notre circuit actuel devait utiliser les deux branches de sortie du tra
  Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc ambisoniqueAlim.sch et ambisoniqueAlim.brd. Les empreintes du contrôleur Buck et du transformateur ont été créé pour Eagle tandis que l’empreinte du pont redresseur a été téléchargée sur internet. 
 
 
-	III / Additionneur
+###	III / Additionneur
 
 Pour ce module, on utilise les composants suivants : 
 
@@ -48,7 +48,7 @@ Nous avons pensé à réaliser ce module en utilisant un schéma additionneur av
 Ce module fait partie du premier PCB, les fichiers utiles au PCB sont donc "ambisoniqueAlim.sch" et "ambisoniqueAlim.brd".
 
 
- 	IV / Séparateur 
+ ###	IV / Séparateur 
  
 Pour ce module on utilise les composants suivants :
 -	Deux contrôleurs DC/DC, synchrone, Buck, output 12V
@@ -59,7 +59,7 @@ Pour ce module, on a dû recommander les contrôleurs Buck. En effet, ceux comma
 
 Ce module fait partie du second PCB, les fichiers utiles au PCB sont donc "ambisoniqueAmpli.sch" et "ambisoniqueAmpli.sch".
 
-	V / Amplificateur audio
+###	V / Amplificateur audio
 
 Pour ce module on utilise les composants suivants :
 -	Un microcontrôleur STM32L412KBT6
