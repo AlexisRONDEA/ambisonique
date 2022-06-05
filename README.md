@@ -15,7 +15,7 @@ Objectifs :
 - Créer un module qui sépare le signal et la puissance pour alimenter les enceintes
 - Créer l’amplificateur de classe D
  
-Le [cahier des charges](https://github.com/AlexisRONDEA/ambisonique/blob/main/livrables/Cahier%20des%20Charges%20-%20Ambisonique%20%5B2%5D.pdf), le diagramme d’architecture, la présentation PDF du projet ainsi que les commandes des composants se trouvent dans le dossier « livrables ».
+Le [cahier des charges](https://github.com/AlexisRONDEA/ambisonique/blob/main/livrables/Cahier%20des%20Charges%20-%20Ambisonique%20%5B2%5D.pdf), le [diagramme d’architecture], la [présentation PDF] du projet ainsi que les [commandes des composants] se trouvent dans le dossier « livrables ».
 
 ###	II / Alimentation du circuit
 
